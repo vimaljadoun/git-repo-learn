@@ -1,2 +1,2 @@
 # git-repo-learn
- have created this repository to learn the git commands in Linux to manage code on GitHub.
+I have created this repository to learn the Git commands in Linux for managing code on GitHub.

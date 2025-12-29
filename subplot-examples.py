@@ -13,16 +13,6 @@ x = np.arange(0, 100, 0.1, dtype=float)
 y1 = np.sin(x)
 y2 = np.cos(x)
 
-plt.plot(x,y1, label='sin(s)')
-plt.plot(x,y2, label='cos(x)')
-plt.axhline(y=0, color='black', linewidth=0.8)
-plt.xlabel('x')
-plt.ylabel('y')
-plt.ylim(-1.5,+1.5)
-plt.legend()
-plt.savefig('subplot-example0.png',dpi=300)
-plt.show()
-
 #------------------------------
 # Example-1 for making subplots
 #------------------------------
@@ -44,7 +34,7 @@ plt.xlabel('x')
 plt.ylabel('y2')
 plt.ylim(-1.8,+1.8)
 plt.legend()
-plt.savefig('subplot-example1.png',dpi=300)
+plt.savefig('subplot-example1.png', bbox_inches='tight', pad_inches=0.1,dpi=300)
 plt.show()
 
 
@@ -84,7 +74,7 @@ ax[1].legend()
 
 # Layout, save, show
 fig.tight_layout()
-fig.savefig('subplot-example2.png', dpi=300)
+fig.savefig('subplot-example2.png', bbox_inches='tight', pad_inches=0.1, dpi=300)
 plt.show()
 
 #------------------------------
@@ -140,5 +130,5 @@ fig.text(0.04, 0.5, r'$Amplitude$', va='center', rotation='vertical')
 
 # Layout
 plt.tight_layout(rect=[0.06, 0.06, 1, 0.96])
-fig.savefig('subplot-example3.png', dpi=300)
+fig.savefig('subplot-example3.png', bbox_inches='tight', pad_inches=0.1, dpi=300)
 plt.show()

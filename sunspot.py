@@ -26,5 +26,5 @@ plt.tick_params(axis="x", which="major", direction="in", top=True, labeltop=Fals
 plt.tick_params(axis="y", which="minor", direction="in", right=True)
 plt.tick_params(axis="y", which="major", direction="in", right=True, labelright=False, left=True, labelleft=True)
 plt.tight_layout()
-plt.savefig('sunspot.png',dpi=300)
+plt.savefig('sunspot.png', bbox_inches='tight', pad_inches=0.1,dpi=300)
 plt.show()

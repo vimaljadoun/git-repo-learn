@@ -1,5 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
+#font and axis equation setup using LATEX
+font = {'family': 'serif',
+        'color':  'black',
+        'weight': 'normal',
+        'size': 12,
+        }
+plt.rcParams.update(plt.rcParamsDefault)
 
 # Parameters
 mu, sigma = 100, 15
@@ -43,6 +50,6 @@ plt.tick_params(axis="y", which="minor", direction="in", right=True)
 plt.tick_params(axis="y", which="major", direction="in", right=True, labelright=False, left=True, labelleft=True)
 plt.tight_layout()
 plt.tight_layout()
-plt.savefig('histogram.png',dpi=300)
+plt.savefig('histogram.png', bbox_inches='tight', pad_inches=0.1,dpi=300)
 plt.show()
 

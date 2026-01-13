@@ -1,0 +1,64 @@
+STEP-1
+Intial Setup:
+
+$ git --version
+$ git config --global user.name vimaljadoun
+$ git config --global user.name vimalkumar96390@gmail.com
+$ git config --list
+
+STEP-2:
+Now create repository in github.com
+QUERY: confirm whether public or private repo.
+
+
+STEP-3:
+create working directory in local machine (ubuntu)
+
+STEP-4:
+Copy URL of repository and execute following commands.
+$ cd to working dirctory
+$ git clone url.git
+
+STEP-5:
+Write your code and save it.
+
+STEP-6:
+check git status
+$ git status
+If created file of your code appears in red, it means file is in tree and is untracked.
+
+STEP-7:
+Now add file to git.
+$ git add hello.py
+this will add file to git and is ready to commit.
+
+STEP-8:
+Run following command to commit changes with description of changes.
+$ git commit -m "description of changes"
+ and check status again
+ $ git status
+ if it says: Nothing to commit.
+ Than congratulations, you have pushed your code in git, but wait....
+ 
+ STEP-9: run following command to add .py file to your repo in github.
+ Method-1: run following command and provide user name and password.
+ $ git push origin main
+ 
+ Method-2: Create token in github to bypass user name and password.
+ And than run following command:
+ $ git remote set-url origin https://<token>@github.com/vimaljadoun/<repository-name>
+at last to commit changes in repository run
+$ git push origin main.
+ 
+Now the token has been saved in local machine till the expiry set in github while creating it.
+The new code can be pushed in the github repository by few commands.
+
+Create new code or make changes in the exisiting code.
+Check git status ($ git status)
+Add code to git ($ git add mycode.py)
+Commit changes ($ git commit -m "message")
+and finally run this ($ git push origin main) to see changes on github.
+ 
+ 
+
+
